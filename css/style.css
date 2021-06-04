@@ -1,0 +1,23 @@
+body{
+    background-color: brown;
+}
+
+div{
+    display: inline-block;
+}
+
+.bottoni{
+    margin-top: 20px;
+}
+
+.selezione{
+    background-color: white;
+    text-align: center;
+    
+    padding: 20px;
+}
+
+.tabella{
+    background-color: white;
+    padding: 10px;
+}

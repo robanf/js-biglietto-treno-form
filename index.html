@@ -10,58 +10,85 @@
 </head>
 <body>
 
-    <section class="selezione my-5">
-        <div>
-            <label for="nome">nome e cognome</label> <br>
-            <input type="text" id="nome">
-        </div>
-
-        <div>
-            <label for="km">km</label> <br>
-            <input type="text" id="km">
-        </div>
-        
-        <div>
-            <label for="eta">eta</label> <br>
-            <select id="eta">
-                <option value="minorenne">Minorenne</option>
-                <option value="maggiorenne">Maggiorenne</option>
-                <option value="over">Over 65</option>
-            </select>
-        </div>
-
-        <br>
-        <div class="bottoni">
-            <button id="genera"> Genera</button>
-            <button id="annulla">Annulla</button>
-        </div>
-    </section>
-
-
-    <section class="tabella">
-        <h2>il tuo biglietto</h3>
-        
+    <section class="selezione m-5">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <div>
+                        <label for="nome">nome e cognome</label> <br>
+                        <input type="text" id="nome">
+                    </div>
+                </div>
+                
+                <div class="col-3">
+                    <div>
+                        <label for="km">km</label> <br>
+                        <input type="number" id="km">
+                    </div>
+                </div>
+                
+                <div class="col-3">
+                    <div>
+                        <label for="eta">eta</label> <br>
+                        <select id="eta">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+               
+        </div>
+        
+        <div class="row mt-5 justify-content-center">
+            <div class="col-1">
+                <button id="genera"> Genera</button>
+            </div>
+            <div class="col-1">
+                <button id="annulla">Annulla</button>
+            </div>
+        </div>
+        
+    </section >
+
+    <h2 class="text-center">il tuo biglietto</h2>
+    <section class="tabella px-5 mx-5">
+        <h3>Dettagli biglietto</h3>
+        <hr>
+        <div class="container">
+            <div class="row g-3">
                 <div class="col">
-                    <h3>nome e cognome</h3>
-                    <div></div>
+                    <h3>Nome e Cognome</h3>
                 </div>
                 <div class="col">
-                    <h3>nome e cognome</h3>
-                    <div></div>
+                    <h3>Offerta</h3>
                 </div>
                 <div class="col">
-                    <h3>nome e cognome</h3>
-                    <div></div>
+                    <h3>Carrozza</h3>
                 </div>
                 <div class="col">
-                    <h3>nome e cognome</h3>
-                    <div></div>
+                    <h3>Codice CP</h3>
                 </div>
                 <div class="col">
-                    <h3>nome e cognome</h3>
-                    <div></div>
+                    <h3>Costo Biglietto</h3>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col">
+                    <div id="stampanome"></div>
+                </div>
+                <div class="col">
+                    <div id="offerta"></div>
+                </div>
+                <div class="col">
+                    <div id="carrozza"></div>
+                </div>
+                <div class="col">
+                    <div id="codicecp"></div>
+                </div>
+                <div class="col">
+                    <div id="costo"></div>
                 </div>
             </div>
 

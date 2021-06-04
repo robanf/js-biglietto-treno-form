@@ -2,6 +2,8 @@ var genera= document.getElementById("genera");
 
 genera.addEventListener("click",function(){
 
+    document.getElementById("biglietto").className= "myshow";
+
     var nome=document.getElementById("nome").value;
     console.log(nome);
 
@@ -30,4 +32,22 @@ genera.addEventListener("click",function(){
     document.getElementById("carrozza").innerHTML= carrozza;
     document.getElementById("codicecp").innerHTML= codicecp;
     document.getElementById("costo").innerHTML=prezzo;
+});
+
+
+var annulla=document.getElementById("annulla");
+
+annulla.addEventListener("click",function(){
+
+    document.getElementById("biglietto").className= "myhide";
+
+    var nome=document.getElementById("nome").value="";
+    console.log(nome);
+
+    var km=document.getElementById("km").value="";
+    var prezzo=km*0.21;
+    console.log(km);
+
+    var eta=document.getElementById("eta").value="";
+    console.log(eta)
 });

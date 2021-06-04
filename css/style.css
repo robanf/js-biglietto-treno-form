@@ -19,3 +19,11 @@ div{
     background-color: white;
     padding: 10px;
 }
+
+.myhide{
+    display: none;
+}
+
+.myshow{
+    display: block;
+}
